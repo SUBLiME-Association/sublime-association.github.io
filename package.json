@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "deploy": "next build && next export && npx gh-pages -d out"
+    "deploy": "next build && next export && npx gh-pages -d out",
+    "clean-deploy": "rm -rf .gh-pages"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
