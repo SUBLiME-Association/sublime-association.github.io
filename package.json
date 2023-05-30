@@ -11,13 +11,15 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"deploy": "yarn build && npx gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@floating-ui/dom": "^1.2.7",
 		"@playwright/test": "^1.28.1",
 		"@skeletonlabs/skeleton": "^1.5.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.5.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
@@ -36,5 +38,9 @@
 		"vite": "^4.3.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@sveltejs/adapter-static": "^2.0.2",
+		"gh-pages": "^5.0.0"
+	}
 }
