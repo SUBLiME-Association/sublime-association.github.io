@@ -1,0 +1,71 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\cormi\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\cormi\AppData\Local\Microsoft\WindowsApps;C:\Users\cormi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cormi\AppData\Roaming\npm;C:\Users\cormi\AppData\Local\GitHubDesktop\bin;C:\Users\cormi\.dotnet\tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\cormi\Desktop\skeleton\my-skeleton-app\node_modules\@esbuild\.win32-x64-s1FUam9C\esbuild.exe'
+
+npm manifest: 
+  {
+  	"name": "sublime-association",
+  	"version": "0.0.1",
+  	"private": true,
+  	"scripts": {
+  		"dev": "vite dev",
+  		"build": "vite build",
+  		"preview": "vite preview",
+  		"test": "playwright test",
+  		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+  		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+  		"test:unit": "vitest",
+  		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+  		"format": "prettier --plugin-search-dir . --write .",
+  		"deploy": "yarn build && npx gh-pages -d build -t true"
+  	},
+  	"devDependencies": {
+  		"@floating-ui/dom": "^1.2.7",
+  		"@playwright/test": "^1.28.1",
+  		"@skeletonlabs/skeleton": "^1.5.1",
+  		"@sveltejs/adapter-auto": "^2.0.0",
+  		"@sveltejs/adapter-static": "^2.0.2",
+  		"@sveltejs/kit": "^1.5.0",
+  		"@typescript-eslint/eslint-plugin": "^5.45.0",
+  		"@typescript-eslint/parser": "^5.45.0",
+  		"autoprefixer": "^10.4.14",
+  		"eslint": "^8.28.0",
+  		"eslint-config-prettier": "^8.5.0",
+  		"eslint-plugin-svelte": "^2.26.0",
+  		"postcss": "^8.4.23",
+  		"prettier": "^2.8.0",
+  		"prettier-plugin-svelte": "^2.8.1",
+  		"svelte": "^3.54.0",
+  		"svelte-check": "^3.0.1",
+  		"tailwindcss": "^3.3.2",
+  		"tslib": "^2.4.1",
+  		"typescript": "^5.0.0",
+  		"vite": "^4.3.0",
+  		"vitest": "^0.25.3"
+  	},
+  	"type": "module",
+  	"dependencies": {
+  		"@sveltejs/adapter-static": "^2.0.2",
+  		"gh-pages": "^5.0.0"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
