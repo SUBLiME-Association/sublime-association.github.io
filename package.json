@@ -6,7 +6,7 @@
     "start": "next start",
     "type-check": "tsc",
     "deploy": "next build && next export && npx gh-pages -d out",
-    "clean-deploy": "rm -rf .gh-pages"
+    "remove-deploy": "git push origin --delete gh-pages"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
