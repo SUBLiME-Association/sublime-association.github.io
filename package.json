@@ -9,6 +9,12 @@
     "remove-deploy": "git push origin --delete gh-pages"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@mantine/core": "^6.0.13",
+    "@mantine/dates": "^6.0.13",
+    "@mantine/form": "^6.0.13",
+    "@mantine/hooks": "^6.0.13",
+    "dayjs": "^1.11.7",
     "gh-pages": "^5.0.0",
     "next": "latest",
     "react": "^18.2.0",

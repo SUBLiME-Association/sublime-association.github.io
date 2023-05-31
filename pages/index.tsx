@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import Layout from '../components/Layout'
-
+import Layout from '../components/App'
+import { Button, Container } from '@mantine/core'
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
+  <Layout title="Home | Accueil">
+    <Container style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <Button component={Link} href="/about" style={{}}>About</Button>
+    </Container>
   </Layout>
 )
 
