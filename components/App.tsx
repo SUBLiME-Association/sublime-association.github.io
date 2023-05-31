@@ -37,7 +37,6 @@ const Layout: React.FC<LayoutProps> = ({ children, title = "SUBLiME" }) => {
 							name="viewport"
 							content="initial-scale=1.0, width=device-width"
 						/>
-            <link rel="icon" href="/favicon.ico" />
 					</Head>
 					<header>
 						<Box w={240} display="flex">
