@@ -12,6 +12,7 @@ import {
 } from "@mantine/core";
 import { themeOverride } from "../theme";
 import Link from "next/link";
+import CustomFonts from '../theme/font';
 
 const Layout: React.FC<LayoutProps> = ({ children, title = "SUBLiME" }) => {
 	const [colorScheme, setColorScheme] = useState<ColorScheme>("dark");
@@ -27,6 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = "SUBLiME" }) => {
 				withGlobalStyles
 				withNormalizeCSS
 			>
+        <CustomFonts />
 				<div>
 					<Head>
 						<title>{title}</title>
@@ -35,7 +37,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = "SUBLiME" }) => {
 							name="viewport"
 							content="initial-scale=1.0, width=device-width"
 						/>
-            <link rel="icon" href="/public/favicon.ico" />
+            <link rel="icon" href="/favicon.ico" />
 					</Head>
 					<header>
 						<Box w={240} display="flex">

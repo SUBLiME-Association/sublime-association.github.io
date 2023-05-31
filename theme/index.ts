@@ -1,9 +1,7 @@
 import { MantineThemeOverride, rem } from '@mantine/core';
 
-
-
 export const themeOverride: MantineThemeOverride = {
-  fontFamily: 'Ubuntu',
+  fontFamily: 'Ubuntu, sans-serif',
   primaryColor: 'teal',
  /* globalStyles: (theme) => ({
     "*:hover": {
