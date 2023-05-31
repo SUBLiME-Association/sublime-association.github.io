@@ -8,6 +8,7 @@ import {
 	ColorSchemeProvider,
 	ColorScheme,
 	NavLink,
+	Box,
 } from "@mantine/core";
 import { themeOverride } from "../theme";
 import Link from "next/link";
@@ -27,12 +28,6 @@ const Layout: React.FC<LayoutProps> = ({ children, title = "SUBLiME" }) => {
 				withNormalizeCSS
 			>
 				<div>
-					{/*<Image
-						src="/image/ng.png"
-						alt="background"
-						fill
-						style={{ zIndex: -1 }}
-          			/>*/}
 					<Head>
 						<title>{title}</title>
 						<meta charSet="utf-8" />
@@ -40,27 +35,66 @@ const Layout: React.FC<LayoutProps> = ({ children, title = "SUBLiME" }) => {
 							name="viewport"
 							content="initial-scale=1.0, width=device-width"
 						/>
+            <link rel="icon" href="/public/favicon.ico" />
 					</Head>
-					{
 					<header>
-						
-						<NavLink label='test' onClick={() => toggleColorScheme()}></NavLink>
-						<NavLink label='go to about'  component={Link} href={'/about'} />
-						<NavLink label='go to home' component={Link} href={"/"} />
+						<Box w={240} display="flex">
+							<NavLink
+								variant="subtle"
+								active
+								noWrap
+								label="theme"
+								onClick={() => toggleColorScheme()}
+							></NavLink>
+							<NavLink
+								variant="subtle"
+								active
+								noWrap
+								label="go to about"
+								component={Link}
+								href={"/about"}
+							/>
+							<NavLink
+								variant="subtle"
+								active
+								noWrap
+								label="go to home"
+								component={Link}
+								href={"/"}
+							/>
+							<NavLink variant="subtle" active noWrap label="teste">
+								<Box w={240} display="flex">
+									<NavLink
+										variant="subtle"
+										active
+										noWrap
+										label="theme"
+										onClick={() => toggleColorScheme()}
+									></NavLink>
+									<NavLink
+										variant="subtle"
+										active
+										noWrap
+										label="go to about"
+										component={Link}
+										href={"/about"}
+									/>
+									<NavLink
+										variant="subtle"
+										active
+										noWrap
+										label="go to home"
+										component={Link}
+										href={"/"}
+									/>
+								</Box>
+							</NavLink>
+						</Box>
 					</header>
-					/* <header>
-					
-          <nav>
-            <Link href='/'>Home</Link> | <Link href='/about'>About</Link> |{' '}
-            <Link href='/users'>Users List</Link> |{' '}
-            <a href='/api/users'>Users API</a>
-          </nav>
-        </header> */}
 					{children}
-					{/* <footer>
-          <hr />
-          <span>I'm here to stay (Footer)</span>
-        </footer> */}
+					<footer>
+						<span>github (footer)</span>
+					</footer>
 				</div>
 			</MantineProvider>
 		</ColorSchemeProvider>
